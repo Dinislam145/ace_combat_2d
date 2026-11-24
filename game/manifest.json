@@ -1,0 +1,20 @@
+{
+  "name": "cleared-to-land",
+  "screen": {
+    "width": 960,
+    "height": 540,
+    "fit": "letterbox",
+    "background": "#000000"
+  },
+  "seed": 68949,
+  "backgroundPolicy": "pause",
+  "assets": ["assets/planes/f-16in-top.png"],
+  "packs": [
+    {
+      "id": "core-2d"
+    },
+    {
+      "id": "world-topdown"
+    }
+  ]
+}

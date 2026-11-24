@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+dist/
+phaser/
+game/shots/
+game/play/
+.phaser/
+/game/docs/
+/game/engine.ts
