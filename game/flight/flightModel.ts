@@ -19,6 +19,7 @@ const F16 = {
 export type FlightState = {
     readonly xMeters: number;
     readonly yMeters: number;
+    readonly altitudeMeters: number;
     readonly speedMps: number;
     readonly accelerationMps2: number;
     readonly throttlePercent: number;
@@ -42,6 +43,7 @@ export function createFlight(): FlightState {
     return {
         xMeters: 0,
         yMeters: 0,
+        altitudeMeters: 160,
         speedMps,
         accelerationMps2: calculateAcceleration(speedMps, INITIAL_THROTTLE_PERCENT, false),
         throttlePercent: INITIAL_THROTTLE_PERCENT,

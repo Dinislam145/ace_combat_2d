@@ -16,6 +16,7 @@ function formatTelemetry(state: FlightState): string {
     return [
         `X: ${state.xMeters.toFixed(1)} m`,
         `Y: ${state.yMeters.toFixed(1)} m`,
+        `Altitude: ${state.altitudeMeters.toFixed(0)} m`,
         `Speed: ${speedKmh.toFixed(0)} km/h`,
         `Heading: ${heading}°`,
     ].join('\n');
@@ -33,7 +34,7 @@ export function mountFlightHud(initialState: FlightState): (state: FlightState) 
         stroke: { color: '#123650', width: 1 },
     } as const;
     const label = game.text(formatTelemetry(initialState), HUD_INSET, HUD_INSET, style);
-    const throttle = game.text('', HUD_INSET, HUD_INSET + 4 * HUD_LINE_HEIGHT, style);
+    const throttle = game.text('', HUD_INSET, HUD_INSET + 5 * HUD_LINE_HEIGHT, style);
 
     function update(state: FlightState): void {
         label.text = formatTelemetry(state);

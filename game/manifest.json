@@ -8,13 +8,34 @@
   },
   "seed": 68949,
   "backgroundPolicy": "pause",
-  "assets": ["assets/planes/f-16in-top.png"],
+  "assets": [
+    "assets/planes/f-16in-low-poly.glb",
+    "assets/fonts/typography/ui-mono.glb"
+  ],
   "packs": [
     {
-      "id": "core-2d"
+      "id": "typography"
     },
     {
-      "id": "world-topdown"
+      "id": "backdrops"
+    },
+    {
+      "id": "backdrop-sky"
+    },
+    {
+      "id": "backdrop-stars"
+    },
+    {
+      "id": "core-3d"
+    },
+    {
+      "id": "procgen"
+    },
+    {
+      "id": "terrain-3d"
+    },
+    {
+      "id": "model-files-3d"
     }
   ]
 }
